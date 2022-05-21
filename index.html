@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+<body >
+
+<div class="crud text-center pt-5">
+  <div class="container">
+     <div class="head ">
+    <h1 class="text-uppercase ">crud</h1>
+    <p class="text-uppercase fs-5">product management system</p>
+  </div>
+  <div class="inputs">
+    <input type="text" id="title" placeholder="title" class="form-control mb-3">
+    <div class="price w-100 mb-3">
+      <div class="row  d-flex justify-content-center ">
+        <div class="col-lg-3 col-md-6 ">
+           <input type="number" onkeyup="getTotal()" class="form-control"  id="price" placeholder="price">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <input type="number"  onkeyup="getTotal()" class="form-control mb-md-3" id="taxes" placeholder="taxes">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <input type="number"  onkeyup="getTotal()" class="form-control mb-3" id="ads" placeholder="ads">
+        </div>
+        <div class="col-lg-2 col-md-6 ">
+          <input type="number"  onkeyup="getTotal()" class="form-control" id="discount" placeholder="discount">
+        </div>
+        <div class="col-lg-1 col-md-6  ">
+        <small id="total" class=" p-2  rounded-3 d-block"></small>
+        </div>
+      </div>
+    </div>
+      <input type="number" id="count" placeholder="count" class="form-control mb-3">
+      <input type="text" id="category" placeholder="category" class="form-control mb-3">
+      <button id="submit" class="btn form-control  text-white fs-5 mb-3">Create</button>
+  </div>
+  <div class="outputs">
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" class=" form-control rounded-3 mb-3" id="search" onkeyup="searchData(this.value)" placeholder="search">
+      </div>
+      <div class="col-md-6">
+      <button id="searchTitle" onclick=" getSearchMood (this.id)" class=" w-100 border-0 p-2   text-white text-capitalize">Search by title</button>
+      </div>
+      <div class="col-md-6">
+      <button id="searchCategory" onclick=" getSearchMood (this.id)" class=" w-100 border-0 p-2   text-white   text-capitalize">Search by category</button>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div id="deleteAll" >
+        
+      </div>
+     <table class="table text-center mt-3">
+       <thead>
+         <tr>
+           <th>ID</th>
+           <th>Title</th>
+           <th>price</th>
+           <th>taxes</th>
+           <th>ads</th>
+           <th>discount</th>
+           <th>total</th>
+           <th>category</th>
+           <th>update</th>
+           <th>delete</th>
+         </tr>
+       </thead>
+       <tbody id="tBody">
+       
+       </tbody>
+     </table>
+    </div>
+  </div>
+  </div>
+ 
+</div>
+
+ 
+
+
+
+
+  
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

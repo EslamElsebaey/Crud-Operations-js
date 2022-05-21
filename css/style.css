@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(151, 161, 209, 0.397);
+}
+input:focus{
+    transform: scale(1.040);
+}
+#total{
+    background-color: rgb(184, 25, 25);
+    color: #fff;
+     /* background-color: rgb(32, 188, 32); */
+}
+#total::before{
+    content: "total :";
+    font-size: 15px;
+    text-transform: capitalize;
+   
+}
+#submit , .outputs button{
+    border-radius: 25px;
+    transition: all .4s ease;
+    background-color: #007bff;
+}
+#submit:hover , .outputs button:hover{
+    transform: scale(1.020);
+}
+table th {
+    text-transform: uppercase;
+}
+th , td {
+    padding: 5px;
+}

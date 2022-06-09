@@ -29,3 +29,12 @@ table th {
 th , td {
     padding: 5px;
 }
+
+
+@media screen and (max-width:768px) {
+  
+    #discount , #price , #taxes , #searchTitle{
+        margin-bottom: 20px;
+    }
+   
+}
